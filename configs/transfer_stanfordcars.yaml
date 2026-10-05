@@ -1,0 +1,70 @@
+model:
+  name: recalcon
+  backbone: ViT-B16
+  freeze: false
+  language_adapter: true
+  vision_adapter: true
+  adapter: mlp
+  adapter_residual: true
+  n_ctx: 4
+  init_text: false
+
+data:
+  root: ./data
+  train: stanfordcars
+  eval: stanfordcars
+  n_shot: 0
+  num_workers: 8
+  image_size: 224
+  randaug: rand-m7-mstd0.5-inc1
+  k_ops: 2
+  scale: [0.9, 1.0]
+  ratio: [0.75, 1.33]
+  hflip: 0.5
+  vflip: 0.0
+  interpolation: bicubic
+  crop_pct: 1.0
+  text_prompt: align
+
+loss:
+  name: recalibrated
+  fusion_alpha: 1.0
+  image_fusion_prob: 0.8
+  focal_gamma: 2.0
+
+train:
+  epochs: 100
+  batch_size: 160
+  total_batch: 640
+  grad_accumulation: 1
+  opt: adamw
+  lr: 5.0e-6
+  adapter_lr: 4.0e-4
+  prompt_lr: null
+  weight_decay: 1.0e-2
+  opt_eps: 1.0e-6
+  opt_betas: [0.9, 0.999]
+  clip_grad: null
+  sched: cosine
+  warmup_epochs: 1
+  cooldown_epochs: 1
+  warmup_lr: 0.0
+  min_lr: 0.0
+  sched_on_updates: true
+  seed: 42
+  precision: 16-mixed
+  gpus: [0, 1, 2, 3]
+  channels_last: true
+  dist_bn: reduce
+  log_interval: 50
+  output_dir: outputs/transfer_stanfordcars
+  resume: ""
+  criteria_metric: loss
+  criteria_decreasing: true
+  wandb: false
+
+eval:
+  batch_size: 512
+  num_workers: 4
+  cache: false
+  checkpoint: ""
