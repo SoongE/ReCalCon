@@ -3,10 +3,12 @@
 Describe each image's **transformation in its text prompt** and **re-calibrate the loss** for multiple positives: better OOD transfer that keeps improving with longer training.
 
 <div align="left">
+  
   <a href="https://bmvc2026.bmva.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SoongE/SoongE/badge/bmvc-2026-dark.svg"><img src="https://raw.githubusercontent.com/SoongE/SoongE/badge/bmvc-2026.svg" alt="BMVC 2026"></picture></a>
   <a href="https://arxiv.org/abs/2609.06967"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SoongE/SoongE/badge/arxiv-2609.06967-dark.svg"><img src="https://raw.githubusercontent.com/SoongE/SoongE/badge/arxiv-2609.06967.svg" alt="arXiv 2609.06967"></picture></a>
   <a href="https://huggingface.co/SoongE/ReCalCon"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SoongE/SoongE/badge/checkpoints-dark.svg"><img src="https://raw.githubusercontent.com/SoongE/SoongE/badge/checkpoints.svg" alt="Checkpoints"></picture></a>
   <a href="LICENSE"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SoongE/SoongE/badge/license-apache-2.0-dark.svg"><img src="https://raw.githubusercontent.com/SoongE/SoongE/badge/license-apache-2.0.svg" alt="License: Apache 2.0"></picture></a>
+  
 </div>
 
 <p align="center">
