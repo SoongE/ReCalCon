@@ -3,12 +3,10 @@
 Describe each image's **transformation in its text prompt** and **re-calibrate the loss** for multiple positives: better OOD transfer that keeps improving with longer training.
 
 <div align="left">
-
-[![BMVC 2026](https://img.shields.io/badge/BMVC-2026-4b44ce.svg)]()
-[![Paper](https://img.shields.io/badge/Paper-PDF-b31b1b?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2609.06967)
-[![Checkpoints](https://img.shields.io/badge/Checkpoints-ReCalCon-ffd21e?logo=huggingface&logoColor=ffd21e)](https://huggingface.co/SoongE/ReCalCon)
-[![License](https://img.shields.io/badge/License-Apache_2.0-green?logo=apache&logoColor=white)](LICENSE)
-
+  <a href="https://bmvc2026.bmva.org/"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SoongE/SoongE/badge/bmvc-2026-dark.svg"><img src="https://raw.githubusercontent.com/SoongE/SoongE/badge/bmvc-2026.svg" alt="BMVC 2026"></picture></a>
+  <a href="https://arxiv.org/abs/2609.06967"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SoongE/SoongE/badge/arxiv-2609.06967-dark.svg"><img src="https://raw.githubusercontent.com/SoongE/SoongE/badge/arxiv-2609.06967.svg" alt="arXiv 2609.06967"></picture></a>
+  <a href="https://huggingface.co/SoongE/ReCalCon"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SoongE/SoongE/badge/checkpoints-dark.svg"><img src="https://raw.githubusercontent.com/SoongE/SoongE/badge/checkpoints.svg" alt="Checkpoints"></picture></a>
+  <a href="LICENSE"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SoongE/SoongE/badge/license-apache-2.0-dark.svg"><img src="https://raw.githubusercontent.com/SoongE/SoongE/badge/license-apache-2.0.svg" alt="License: Apache 2.0"></picture></a>
 </div>
 
 <p align="center">
